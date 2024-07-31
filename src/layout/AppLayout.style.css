@@ -1,0 +1,27 @@
+.navbar-bg {
+    background-color: #000000;
+}
+
+.logo {
+    color: #ed0000 !important;
+    font-family: serif;
+    font-size: x-large !important;
+    font-weight: bolder;
+}
+
+.link {
+    color: #ffffff !important;
+}
+
+.search-btn {
+    color: #ed0000 !important;
+    border-color: #ed0000 !important;
+}
+
+.search-btn:hover {
+    background-color: #ed0000 !important;
+    color: #ffffff !important;
+}
+
+
+
