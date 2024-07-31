@@ -1,6 +1,8 @@
-
 .navbar-bg {
     background-color: #000000;
+    position: fixed !important;
+    width: 100%;
+    z-index: 3;
 }
 
 .logo {
