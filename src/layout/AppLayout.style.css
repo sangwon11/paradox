@@ -3,6 +3,7 @@
     position: fixed !important;
     width: 100%;
     z-index: 3;
+    top: 0px;
 }
 
 .logo {
