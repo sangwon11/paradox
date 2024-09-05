@@ -16,6 +16,11 @@ const MoviePage = () => {
     setPage(selected + 1)
   }
   console.log('ddd',data)
+
+  if (!data?.results || data.results.length === 0) {
+    return <div>No results found for "{keyword}"</div>
+  }
+
   return (
     <Container>
       <Row>
