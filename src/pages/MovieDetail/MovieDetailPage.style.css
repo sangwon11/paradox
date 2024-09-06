@@ -6,6 +6,14 @@
 
 .movie-info {
     width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-btn-area {
+    display: flex;
+    justify-content: center;
 }
 
 .review-btn {
