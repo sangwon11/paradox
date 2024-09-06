@@ -5,7 +5,7 @@
 }
 
 .movie-info {
-    width: 500px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
