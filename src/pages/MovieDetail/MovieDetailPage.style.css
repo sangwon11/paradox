@@ -1,0 +1,7 @@
+.movie-detail {
+    display: flex !important;
+    justify-content: center;
+}
+.movie-info {
+    width: 500px;
+}
