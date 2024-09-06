@@ -1,5 +1,6 @@
 .movie-detail {
-    display: flex !important;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
