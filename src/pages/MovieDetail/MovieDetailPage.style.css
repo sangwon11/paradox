@@ -2,6 +2,17 @@
     display: flex !important;
     justify-content: center;
 }
+
 .movie-info {
     width: 500px;
+}
+
+.review-btn {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(217, 57, 57);
+    color: white;
+    font-weight: bolder;
+    border-radius: 30px;
+    outline: none;
 }

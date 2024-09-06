@@ -1,13 +1,13 @@
 import React from 'react';
 import { useMovieDetailQuery } from '../../hooks/useMovieDetail';
-import { useParams } from 'react-router-dom'; 
+import { useNavigate, useParams } from 'react-router-dom'; 
 import './MovieDetailPage.style.css';
 import { Badge } from 'react-bootstrap';
 
 const MovieDetailPage = () => {
   const { id } = useParams();
-
   const { data: movie, isLoading, error } = useMovieDetailQuery({ id });
+  const navigate = useNavigate();
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -36,6 +36,8 @@ const MovieDetailPage = () => {
         <div>
           <Badge bg="danger" >Overview</Badge> {movie.overview}
         </div>
+        <button onClick={() => navigate(`/movies/${id}/reviews`)} className='review-btn'>Reviews</button>
+        <button className='review-btn'>Trailer</button>
       </div>
       <img className='movie-img' src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
     </div>
