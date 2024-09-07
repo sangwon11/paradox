@@ -21,7 +21,6 @@ const MovieDetailPage = () => {
     return <div>Error: {movieError?.message || videosError?.message}</div>;
   }
 
-  // 예고편 중 유튜브 링크만 가져오기 (TMDB에서 제공하는 주요 사이트는 YouTube가 많음)
   const trailer = videos.results.find(video => video.site === 'YouTube' && video.type === 'Trailer');
 
   return (
