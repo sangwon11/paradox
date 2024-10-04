@@ -9,7 +9,6 @@ import './AppLayout.style.css';
 
 
 
-
 const AppLayout = () => {
   const [keyword,setKeyword] = useState("");
   const navigate = useNavigate();
